@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@thimal/socksv5@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@thimal/socksv5/-/socksv5-0.0.6.tgz#c45512cc4bf901bb4c0f63ab078d64ae7ef1939b"
-  integrity sha512-rX0Nr2H9AHEKknvaX6/zwhRb4B6mLKqXMp1f+h3Daug4knr3801OFu02jMUEwUq7Bq8s6UkfUuEAwtoN3HM4/g==
+"@thimal/socksv5@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@thimal/socksv5/-/socksv5-1.0.0.tgz#2ac1a9d7a37d081c0f4fd171bb8347c32b7e83a0"
+  integrity sha512-u2YR5VRPF7DGlBDu95joTAwZYg9a3ZyZCsirX8u4kht2VIrP12EPhQ/qe2ciIupbCOKQHQp77KCpaaO5I6CMgg==
   dependencies:
-    ipv6 "*"
+    ip-address "^5.8.8"
 
 "@types/jasmine@^2.8.9":
   version "2.8.16"
@@ -119,11 +119,6 @@ assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
 
-async@0.2.x:
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
-  integrity sha1-trvgsGdLnXGXCMo43owjfLUmw9E=
-
 atob@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
@@ -221,22 +216,6 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-cli@0.4.x:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/cli/-/cli-0.4.5.tgz#78f9485cd161b566e9a6c72d7170c4270e81db61"
-  integrity sha1-ePlIXNFhtWbppsctcXDEJw6B22E=
-  dependencies:
-    glob ">= 3.1.4"
-
-cliff@0.1.x:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/cliff/-/cliff-0.1.10.tgz#53be33ea9f59bec85609ee300ac4207603e52013"
-  integrity sha1-U74z6p9ZvshWCe4wCsQgdgPlIBM=
-  dependencies:
-    colors "~1.0.3"
-    eyes "~0.1.8"
-    winston "0.8.x"
-
 clone-stats@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/clone-stats/-/clone-stats-0.0.1.tgz#b88f94a82cf38b8791d58046ea4029ad88ca99d1"
@@ -260,16 +239,6 @@ color-support@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
 
-colors@0.6.x:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-0.6.2.tgz#2423fe6678ac0c5dae8852e5d0e5be08c997abcc"
-  integrity sha1-JCP+ZnisDF2uiFLl0OW+CMmXq8w=
-
-colors@~1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
-  integrity sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=
-
 component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
@@ -291,11 +260,6 @@ copy-descriptor@^0.1.0:
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
-
-cycle@1.0.x:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/cycle/-/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
-  integrity sha1-IegLK+hYD5i0aPN5QwZisEbDStI=
 
 dateformat@^2.0.0:
   version "2.2.0"
@@ -448,11 +412,6 @@ extglob@^2.0.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
-
-eyes@0.1.x, eyes@~0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/eyes/-/eyes-0.1.8.tgz#62cf120234c683785d902348a800ef3e0cc20bc0"
-  integrity sha1-Ys8SAjTGg3hdkCNIqADvPgzCC8A=
 
 fancy-log@^1.1.0:
   version "1.3.3"
@@ -608,18 +567,6 @@ glob2base@^0.0.12:
   resolved "https://registry.yarnpkg.com/glob2base/-/glob2base-0.0.12.tgz#9d419b3e28f12e83a362164a277055922c9c0d56"
   dependencies:
     find-index "^0.1.1"
-
-"glob@>= 3.1.4":
-  version "7.1.6"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
-  integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
-  dependencies:
-    fs.realpath "^1.0.0"
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "^3.0.4"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
 
 glob@^4.3.1:
   version "4.5.3"
@@ -843,14 +790,14 @@ interpret@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.2.0.tgz#d5061a6224be58e8083985f5014d844359576296"
 
-ipv6@*:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/ipv6/-/ipv6-3.1.3.tgz#4d9064f9c2dafa0dd10b8b7d76ffca4aad31b3b9"
-  integrity sha1-TZBk+cLa+g3RC4t9dv/KSq0xs7k=
+ip-address@^5.8.8:
+  version "5.9.4"
+  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-5.9.4.tgz#4660ac261ad61bd397a860a007f7e98e4eaee386"
+  integrity sha512-dHkI3/YNJq4b/qQaz+c8LuarD3pY24JqZWfjB8aZx1gtpc2MDILu9L9jpZe1sHpzo/yWFweQVn+U//FhazUxmw==
   dependencies:
-    cli "0.4.x"
-    cliff "0.1.x"
-    sprintf "0.1.x"
+    jsbn "1.1.0"
+    lodash "^4.17.15"
+    sprintf-js "1.1.2"
 
 is-absolute@^1.0.0:
   version "1.0.0"
@@ -1019,11 +966,6 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
-isstream@0.1.x:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
-  integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-
 jasmine-core@~2.99.0:
   version "2.99.1"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-2.99.1.tgz#e6400df1e6b56e130b61c4bcd093daa7f6e8ca15"
@@ -1035,6 +977,11 @@ jasmine@^2.8.0:
     exit "^0.1.2"
     glob "^7.0.6"
     jasmine-core "~2.99.0"
+
+jsbn@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-1.1.0.tgz#b01307cb29b618a1ed26ec79e911f803c4da0040"
+  integrity sha1-sBMHyym2GKHtJux56RH4A8TaAEA=
 
 json-stable-stringify@^1.0.0:
   version "1.0.1"
@@ -1106,7 +1053,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "^3.0.0"
 
-lodash@^4.17.13, lodash@~1.0.1:
+lodash@^4.17.13, lodash@^4.17.15, lodash@~1.0.1:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -1379,11 +1326,6 @@ path-root@^0.1.1:
   dependencies:
     path-root-regex "^0.1.0"
 
-pkginfo@0.3.x:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.3.1.tgz#5b29f6a81f70717142e09e765bbeab97b4f81e21"
-  integrity sha1-Wyn2qB9wcXFC4J52W76rl7T4HiE=
-
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -1592,10 +1534,10 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-sprintf@0.1.x:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/sprintf/-/sprintf-0.1.5.tgz#8f83e39a9317c1a502cb7db8050e51c679f6edcf"
-  integrity sha1-j4PjmpMXwaUCy324BQ5Rxnn27c8=
+sprintf-js@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.1.2.tgz#da1765262bf8c0f571749f2ad6c26300207ae673"
+  integrity sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==
 
 ssh2-streams@~0.4.10:
   version "0.4.10"
@@ -1612,11 +1554,6 @@ ssh2@^0.8.9:
   integrity sha512-GmoNPxWDMkVpMFa9LVVzQZHF6EW3WKmBwL+4/GeILf2hFmix5Isxm7Amamo8o7bHiU0tC+wXsGcUXOxp8ChPaw==
   dependencies:
     ssh2-streams "~0.4.10"
-
-stack-trace@0.0.x:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
-  integrity sha1-VHxws0fo0ytOEI6hoqFZ5f3eGcA=
 
 static-extend@^0.1.1:
   version "0.1.2"
@@ -1884,19 +1821,6 @@ which@^1.2.14:
   resolved "https://registry.yarnpkg.com/which/-/which-1.3.1.tgz#a45043d54f5805316da8d62f9f50918d3da70b0a"
   dependencies:
     isexe "^2.0.0"
-
-winston@0.8.x:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/winston/-/winston-0.8.3.tgz#64b6abf4cd01adcaefd5009393b1d8e8bec19db0"
-  integrity sha1-ZLar9M0Brcrv1QCTk7HY6L7BnbA=
-  dependencies:
-    async "0.2.x"
-    colors "0.6.x"
-    cycle "1.0.x"
-    eyes "0.1.x"
-    isstream "0.1.x"
-    pkginfo "0.3.x"
-    stack-trace "0.0.x"
 
 wrappy@1:
   version "1.0.2"

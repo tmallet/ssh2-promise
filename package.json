@@ -1,6 +1,6 @@
 {
   "name": "@thimal/ssh2-promise",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Promise wrapper around SSH2 library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,7 +40,7 @@
   "author": "Sanket Bajoria",
   "license": "MIT",
   "dependencies": {
-    "@thimal/socksv5": "^0.0.6",
+    "@thimal/socksv5": "^1.0.0",
     "ssh2": "^0.8.9"
   },
   "devDependencies": {
