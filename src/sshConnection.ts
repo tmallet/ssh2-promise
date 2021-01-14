@@ -8,7 +8,7 @@ import { Stream } from 'stream';
 import { TunnelConfig } from './TunnelConfig';
 
 const SSH2 = require('ssh2'),
-    socks = require('@heroku/socksv5');
+    socks = require('@thimal/socksv5');
 
 
 var defaultOptions = {
@@ -48,10 +48,10 @@ export default class SSHConnection extends EventEmitter {
 
    /**
      * Emit message on this channel
-     * @param {*} channel 
-     * @param {*} status 
-     * @param {*} ssh 
-     * @param {*} payload 
+     * @param {*} channel
+     * @param {*} status
+     * @param {*} ssh
+     * @param {*} payload
      */
     emit(channel:string, status:string, payload?:any):boolean {
         super.emit(channel, status, this, payload);
@@ -259,7 +259,7 @@ export default class SSHConnection extends EventEmitter {
                     this.__x11.reject("X Server not running locally.");
                     this.emit(SSHConstants.CHANNEL.X11, SSHConstants.STATUS.DISCONNECT, {err: err, msg: "X Server not running locally."})
                 });
-                // connects to localhost:0.0 
+                // connects to localhost:0.0
                 xserversock.connect(6000, 'localhost');
             }).on('error', (err:any) => {
                 this.emit(SSHConstants.CHANNEL.SSH, SSHConstants.STATUS.DISCONNECT, {err: err});
@@ -267,7 +267,7 @@ export default class SSHConnection extends EventEmitter {
                 //reject(err);
                 //this.__$connectPromise = null;
             }).on('continue', () => {
-               this.emit(SSHConstants.CHANNEL.SSH, SSHConstants.STATUS.CONTINUE); 
+               this.emit(SSHConstants.CHANNEL.SSH, SSHConstants.STATUS.CONTINUE);
             }).on('close', () => {
                 this.emit(SSHConstants.CHANNEL.SSH, SSHConstants.STATUS.DISCONNECT, {err: this.__err});
                 if (this.config.reconnect && this.__retries <= this.config.reconnectTries && this.__err != null && this.__err.level != "client-authentication" && this.__err.code != 'ENOTFOUND') {
